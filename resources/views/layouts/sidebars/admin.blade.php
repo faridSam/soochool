@@ -54,6 +54,7 @@
                                 </li>
                             </ul>
                         </li>
+                        <li ><a href="{{ route('admin.niveau.index') }}" ><i class="icon mdi mdi-equalizer"></i><span>Niveau</span></a></li>
                         {{--<li class="parent"><a href="#"><i class="icon mdi mdi-view-web"></i><span>Layouts</span></a>
                             <ul class="sub-menu">
                                 <li><a href="layouts-primary-header.html">Primary Header</a>

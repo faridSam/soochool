@@ -285,6 +285,7 @@ Route::group(['middleware'=>'auth'],function(){
         });
 
         Route::get('classes','Admin\ClasseController@liste')->name('classes');
+        Route::get('load_niveau','Admin\NiveauController@index')->name('niveau.index');
         Route::get('matieres','Admin\MatiereController@index')->name('matieres.index');
         Route::get('eleves','Admin\EleveController@index')->name('eleves.index');
         Route::get('responsables','Admin\ResponsableController@index')->name('responsables.index');
