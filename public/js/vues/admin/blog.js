@@ -90,6 +90,7 @@ let Blog={
                     this.modif=false
 
             }).catch(err=>{
+                console.log(err.response.data);
                 $.gritter.add({
                     title:"Erreur!!!!",
                     time:2000,
@@ -130,7 +131,7 @@ let Blog={
 
                 this.loadDatas();
             }).catch(err=>{
-
+                console.log(err.response.data);
                 $.gritter.add({
                     title:"Modification",
                     time:2000,
@@ -166,6 +167,7 @@ let Blog={
                     class_name:"color success"});
 
             }).catch(err=>{
+                console.log(err.response.data);
                 $.gritter.add({
                     title:"Suppresion",
                     time:2000,
@@ -186,6 +188,7 @@ let Blog={
 
 
             }).catch(err=>{
+                console.log(err.response.data);
                 $.gritter.add({
                     title:"Suppresion",
                     time:2000,

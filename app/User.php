@@ -35,6 +35,10 @@ class User extends \TCG\Voyager\Models\User
         return $this->hasMany('App\Login');
     }
 
+    public  function comment(){
+        return $this->hasMany('App\Comment');
+    }
+
     public function personnel(){
         return $this->belongsTo('App\Personnel');
     }
